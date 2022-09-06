@@ -1,13 +1,14 @@
 import React from 'react'
 import { CounterButton } from './Counterbutton'
-import { CounterProvider } from './CounterProvider'
+// import { CounterProvider } from './CounterProvider'
+import { RecoilRoot } from "recoil"
 
 const App = () => {
   return (
-    <CounterProvider>
+    <RecoilRoot>
     <div>App</div>
     <CounterButton />
-    </CounterProvider>
+    </RecoilRoot>
   )
 }
 
